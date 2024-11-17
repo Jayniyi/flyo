@@ -5,6 +5,8 @@ export default {
     colors: {
       'Dark-blue': 'hsl(217, 28%, 15%)',
       white: '#FFFFFF',
+      'button-pdf': 'hsl(198, 60%, 50%)',
+      'button-hover': 'hsl(176, 68%, 64%)',
     },
     extend: {
       fontFamily: {
@@ -16,6 +18,7 @@ export default {
     },
     backgroundImage: {
       'custom-image': "url('/src/assets/img/bg-curvy-desktop.svg')",
+      'mobile-bg-curvy':"url('/src/assets/img/bg-curvy-mobile.svg')",
     },
   },
   variants: {

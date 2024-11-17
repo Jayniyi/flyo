@@ -1,18 +1,38 @@
 <script setup>
-import Logo from '@/assets/img/logo.svg'
-import { RouterLink } from 'vue-router'
+import Logo from '@/assets/img/logo.svg';
+import { RouterLink } from 'vue-router';
+
 </script>
+
 <template>
-  <div class="container p-7">
-    <div class="flex justify-between">
+  <header class="bg-gray-800 text-white pos-fexe">
+    <div class="container mx-auto p-8 flex justify-between items-center">
+      <!-- Logo Section -->
       <div>
-        <img :src="Logo" alt="" srcset="" class="w-20" />
+        <img :src="Logo" alt="Logo" class="w-16 h-auto" />
       </div>
-      <div class="flex space-x-6">
-        <RouterLink to="/" class="text-white hover:underline"> Home </RouterLink>
-        <RouterLink to="/" class="text-white hover:underline"> Team </RouterLink>
-        <RouterLink to="/" class="text-white hover:underline"> Sign In </RouterLink>
-      </div>
+
+      <!-- Navigation Links -->
+      <nav class="flex space-x-4 md:space-x-6">
+        <RouterLink 
+          to="/" 
+          class="hover:underline focus:outline-none focus:ring focus:ring-gray-300 rounded"
+        >
+          Home
+        </RouterLink>
+        <RouterLink 
+          to="/team" 
+          class="hover:underline focus:outline-none focus:ring focus:ring-gray-300 rounded"
+        >
+          Team
+        </RouterLink>
+        <RouterLink 
+          to="/signin" 
+          class="hover:underline focus:outline-none focus:ring focus:ring-gray-300 rounded"
+        >
+          Sign In
+        </RouterLink>
+      </nav>
     </div>
-  </div>
+  </header>
 </template>
